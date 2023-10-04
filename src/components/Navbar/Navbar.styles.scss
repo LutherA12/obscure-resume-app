@@ -1,0 +1,38 @@
+.nav-bar-container {
+  position: fixed;
+  left: 37%;
+  top: 1px;
+
+  .navlinks {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    transition: all var(--animateTime) ease;
+    padding-left: 50px;
+  }
+
+  .home-app {
+    &:hover {
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: #08326f;
+    }
+  }
+
+  .gpt3-app {
+    &:hover {
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: #81afdd;
+    }
+  }
+
+  .monster-app {
+    &:hover {
+      font-size: 32px;
+      letter-spacing: 2px;
+      color: #0ccac4;
+    }
+  }
+}

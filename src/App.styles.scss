@@ -1,0 +1,19 @@
+:root {
+  --animateTime: 2s;
+  --accentColor: #094297;
+  --background-color: #001030;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.main-app {
+  color: #ffffff;
+  font-size: 30px;
+  padding: 10px;
+  background-color: var(--background-color);
+}

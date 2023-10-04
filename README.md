@@ -1,0 +1,1 @@
+This will be my main web application resume; It will include various information about me, skills, things I would like to learn, some sample applications I've written and perhaps even some reading material; I will update this as much as possible while working my other projects while working toward my deadline;
