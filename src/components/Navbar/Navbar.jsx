@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./Navbar.styles.scss";
 
 function Navbar() {
@@ -14,6 +13,9 @@ function Navbar() {
       </Link>
       <Link to="/MonsterApp" className="monster-app navlinks">
         Monster Rolodex
+      </Link>
+      <Link to="/CrownApp" className="crown-app navlinks">
+        Crown Clothing
       </Link>
     </nav>
   );

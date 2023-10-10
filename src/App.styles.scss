@@ -1,7 +1,13 @@
 :root {
-  --animateTime: 2s;
+  --animateTime: 1500ms;
   --accentColor: #094297;
+  --accentColor1: #051835;
   --background-color: #001030;
+  --home-color: #3e4c61;
+  --gpt3-color: #1e42a5;
+  --monster-color: #138a86;
+  --crown-color: rgba(122, 122, 122, 0.705);
+  --text-color: aliceblue;
 }
 
 * {
@@ -9,10 +15,23 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    background-color: var(--accentColor);
+    width: 12px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--background-color);
+
+    &:hover {
+      background-color: #1b2b49;
+    }
+  }
 }
 
 .main-app {
-  color: #ffffff;
+  color: aliceblue;
   font-size: 30px;
   padding: 10px;
   background-color: var(--background-color);
