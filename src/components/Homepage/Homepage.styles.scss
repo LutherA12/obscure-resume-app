@@ -106,6 +106,9 @@
 
 .gpt3-object-link {
   color: var(--gpt3-color);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .monster-button {
@@ -120,6 +123,9 @@
 
 .monster-object-link {
   color: var(--monster-color);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .crown-clothing-button {
@@ -134,6 +140,43 @@
 
 .crown-object-link {
   color: var(--crown-color);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.resume-button {
+  box-shadow: 0px 6px 7px 0px var(--accentColor);
+  color: var(--text-color);
+  &:hover {
+    padding: 33px;
+    color: var(--accentColor1);
+    background-color: var(--resume-color);
+  }
+}
+
+.resume-title-exp {
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
+
+.resume-links {
+  color: var(--accentColor);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.resume-divider {
+  width: 790px;
+  height: 1px;
+  background-color: var(--accentColor);
+  margin: 80px 0;
+}
+
+.resume-job-categories {
+  color: var(--accentColor);
 }
 
 .map-buttons-divs {
@@ -141,10 +184,11 @@
   overflow: auto;
 
   .divs {
-    max-height: 300px;
+    max-height: 450px;
+    max-width: 900px;
   }
 
   .buttons {
-    max-height: 100px;
+    max-height: 80px;
   }
 }

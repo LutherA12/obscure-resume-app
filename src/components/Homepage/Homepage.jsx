@@ -126,7 +126,7 @@ function Homepage() {
       <div className="divs">{isFourthButtonClicked}</div>,
       <button
         type="button"
-        className="buttons resume"
+        className="buttons resume-button"
         onClick={ResumeButtonClickedHandler}
       >
         Resume
