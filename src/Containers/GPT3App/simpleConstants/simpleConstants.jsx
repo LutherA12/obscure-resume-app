@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import google from "../assets/google.png";
 import slack from "../assets/slack.png";
 import atlassian from "../assets/atlassian.png";
@@ -77,6 +79,17 @@ export const navlinks = {
 
 export const BlogInfo = {
   heading: `A lot is happening and we are blogging about it!`,
+  blogpic: blog01,
+  title: `GPT-3 and Open AI is the future. Come journey with us and explore how it
+     works!`,
+  date: `Sept 8, 2023`,
+  link: <Link to="/Gpt3Article">Read Full Article</Link>,
+};
+
+/*
+
+export const BlogInfo = {
+  heading: `A lot is happening and we are blogging about it!`,
   blogpics: [blog01, blog02, blog03, blog04, blog05],
   titles: [
     `GPT-3 and Open AI is the future. Come journey with us and explore how it
@@ -93,11 +106,50 @@ export const BlogInfo = {
     `Jul 25, 2021`,
     `Jan 6, 2019`,
   ],
+  links: [
+    <Link>something</Link>,
+    <Link>something</Link>,
+    <Link>something</Link>,
+    <Link>something</Link>,
+    <Link>something</Link>,
+  ],
 };
 
+*/
+
+export const BlogInfo1 = [
+  {
+    blogpic: blog02,
+    title: "Is AI really dangerous?",
+    date: "Jan 22 2022",
+    link: <Link to="/AiDangerArticle">Read Full Article</Link>,
+  },
+  {
+    blogpic: blog03,
+    title: "Breaking off the chains of the past!",
+    date: "Oct 10, 2021",
+    link: <Link to="/BreakingArticle">Read Full Article</Link>,
+  },
+  {
+    blogpic: blog04,
+    title: "Data, Data and more Data!",
+    date: "Jul 25, 2021",
+    link: <Link to="/DataArticle">Read Full Article</Link>,
+  },
+  {
+    blogpic: blog05,
+    title: "What's the point?!",
+    date: "Jan 6, 2019",
+    link: <Link to="/PointArticle">Read Full Article</Link>,
+  },
+];
+
+/*
 export const ArticleInfo = {
   text: `Read Full Article`,
 };
+
+*/
 
 export const CtaInfo = {
   title: `Request Early Access to Get Started`,
@@ -177,7 +229,7 @@ export const FeaturesInfo = {
   subtext: "Request Early Access to Get Started!",
 };
 
-export const featuresDataOG = [
+export const FeaturesDataOG = [
   {
     title: "Improving End User Mistrust",
     text: "It's very easy to mistrust anyone working with AI, and robotics in general, remember skynet? Well, we aim to rectify that issue and help end users understand that AI is undoubtedly under our control!",
@@ -195,3 +247,11 @@ export const featuresDataOG = [
     text: "Ethics are and will always be a large part of AI. Bias is prevelent and we do our best to have as many points of view while coding these systems in order to eliminate as much bias as we can!",
   },
 ];
+
+export const ArticlesInfo = {
+  gpt3: <>gpt3</>,
+  aidanger: <>aidanger</>,
+  breaking: <>breaking</>,
+  data: <>data</>,
+  point: <>point</>,
+};

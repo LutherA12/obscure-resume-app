@@ -2,7 +2,7 @@ import "./features.styles.scss";
 import { Feature } from "../../components/componentExports";
 import {
   FeaturesInfo,
-  featuresDataOG,
+  FeaturesDataOG,
 } from "../../simpleConstants/simpleConstants";
 
 function Features() {
@@ -14,12 +14,12 @@ function Features() {
       </div>
 
       <div className="gpt3__features-container">
-        {featuresDataOG.map((featuresDataNG, index) => {
+        {FeaturesDataOG.map((featuresDataNG) => {
           return (
             <Feature
               title={featuresDataNG.title}
               text={featuresDataNG.text}
-              key={featuresDataNG.title + index}
+              key={Math.random()}
             />
           );
         })}

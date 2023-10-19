@@ -1,21 +1,30 @@
 import "./article.styles.scss";
-import { ArticleInfo } from "../../simpleConstants/simpleConstants";
 
-function Article({ imgUrl, date, title }) {
+function Article({ blogpic, date, title, link }) {
   return (
     <div className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">
-        <img src={imgUrl} alt="image not found" />
+        <img src={blogpic} alt="image not found" />
       </div>
       <div className="gpt3__blog-container_article-content">
         <div>
           <p>{date}</p>
           <h3>{title}</h3>
         </div>
-        <p>{ArticleInfo.text}</p>
+        <p>{link}</p>
       </div>
     </div>
   );
 }
 
 export default Article;
+
+/*
+
+<p></p>
+
+          {ArticleLinks.links.map((links) => {
+            return <div>{links}</div>;
+          })}
+
+*/

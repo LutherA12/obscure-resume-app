@@ -16,7 +16,7 @@ function Homepage() {
   const [inviteText1, setInviteText1] = useState("");
   const [inviteText2, setInviteText2] = useState("");
 
-  const TextChangeHandlerIchi = async () => {
+  const InviteTextChangeHandlerIchi = async () => {
     setIsAnimating(true);
 
     setTimeout(() => {
@@ -27,7 +27,7 @@ function Homepage() {
     }, animateDelay);
   };
 
-  const TextChangeHandlerNi = async () => {
+  const InviteTextChangeHandlerNi = async () => {
     setIsAnimating(true);
 
     setTimeout(() => {
@@ -38,7 +38,7 @@ function Homepage() {
     }, animateDelay);
   };
 
-  const TextChangeHandlerSan = async () => {
+  const InviteTextChangeHandlerSan = async () => {
     setIsAnimating(true);
 
     setTimeout(() => {
@@ -51,13 +51,13 @@ function Homepage() {
 
   const invite = {
     invite: [
-      <span className="invite" onClick={TextChangeHandlerIchi}>
+      <span className="invite" onClick={InviteTextChangeHandlerIchi}>
         {inviteText}
       </span>,
-      <span className="invite" onClick={TextChangeHandlerNi}>
+      <span className="invite" onClick={InviteTextChangeHandlerNi}>
         {inviteText1}
       </span>,
-      <span className="invite" onClick={TextChangeHandlerSan}>
+      <span className="invite" onClick={InviteTextChangeHandlerSan}>
         {inviteText2}
       </span>,
     ],
@@ -67,7 +67,7 @@ function Homepage() {
   const [isMonsterButtonClicked, setIsMonsterButtonClicked] = useState("");
   const [isCrownClothingButtonClicked, setIsCrownClothingButtonClicked] =
     useState("");
-  const [isFourthButtonClicked, setIsFourthButtonClicked] = useState("");
+  const [isFourthButtonClicked, setIsFourthButtonClicked] = useState(""); //not done
   const [isResumeButtonClicked, setIsResumeButtonClicked] = useState("");
 
   const Gpt3ButtonClickHandler = () => {
@@ -123,7 +123,7 @@ function Homepage() {
       >
         Fourth
       </button>,
-      <div className="divs">{isFourthButtonClicked}</div>,
+      <div className="divs">{isFourthButtonClicked}</div>, //not done
       <button
         type="button"
         className="buttons resume-button"

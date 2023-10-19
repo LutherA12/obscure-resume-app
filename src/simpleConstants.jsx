@@ -66,14 +66,14 @@ export const HomepageMain = {
     <>
       In this second portion I want to take the opportunity to briefly discuss
       my apps at the top of this page. I will streamline my resume here too. If
-      you want the full version of my resume I have it as a PDF. Why didn't I
-      just put my full resume on here? Well, I'll be candid. I've wanted to
-      become a software developer for quite some time, however, my actions
-      didn't always match my desires; as such I've had a lot of jobs that are
-      not partucularly pertinent to development. These were "waste of time" jobs
-      if you like and I don't want to give an overage of information unless
-      asked directly, I know you are busy. Instead, similar to how I try and
-      code, I strive for efficiency, practicality and effectiveness wherever
+      you want the full version of my resume I have it in PDF form at the bottom
+      of the page. Why not just put my full resume here? Well, I'll be candid.
+      I've wanted to become a software developer for quite some time, however,
+      my actions didn't always match my desires; as such I've had a lot of jobs
+      that are not partucularly pertinent to development. These were "waste of
+      time" jobs if you like and I don't want to give an overage of information
+      unless asked directly, I know you are busy. Instead, similar to how I try
+      and code, I strive for efficiency, practicality and effectiveness wherever
       possible and the more I know, the better I am.{" "}
       <span className="quote-container">
         "Data! Data! Data!.. I cannot make bricks without clay!" -Sherlock
@@ -95,12 +95,14 @@ export const HomepageMain = {
       method, or much of anything else for that matter, but I found working
       through this app really helped cement some of those concepts for me once I
       had more knowledge under my belt. <br />
-      <br /> This is a full landing page for GPT3 "chat gpt", it doesn't have
-      any functionallity behind it, but that can of course be added if necessary
-      and this page can be tweaked for different landing page uses other than
-      chat gpt. <br />
-      <br />I tried to make this app as DRY as I could and the coding you see
-      now is a bit different from how it was originally. Namely, I pushed
+      <br /> This is a full landing page for GPT3 (chat gpt) which I've added
+      functionallity to since the basic design was simply just the landing page.
+      Now, the sign in/sign out buttons work via Firebase and the articles are
+      clickable links. I did a bit of research on chat gpt and wrote the
+      articles as coherently as I could, but please take them with a grain of
+      salt. <br />
+      <br />I also tried to make this app as DRY as I could and the coding you
+      see now is a bit different from how it was originally. Namely, I pushed
       everything I could into objects and put those in a separate helper file so
       that I could import them where ever I needed without bogging down my JSX.
       This page is also fully responsive down to cell phone screens. <br />
@@ -123,7 +125,7 @@ export const HomepageMain = {
       <br />
       This is a simple filtering app that consumes an api I fetch, I then parse
       the returned object into JSON and use the filter method for the name
-      "target.value" so that each monster can be searched and sorted by name as
+      (target.value) so that each monster can be searched and sorted by name as
       you type. Forgive me for repeating if you've already gone into my code and
       looked for yourself.
       <br />
@@ -167,19 +169,18 @@ export const HomepageMain = {
       quos incidunt voluptatibus blanditiis ipsam voluptates exercitationem,
       rerum in omnis aut quis laborum perferendis asperiores suscipit ex, nulla
       libero neque.
-    </div>,
+    </div>, //not complete
     <div className="resume-div">
       Here is my streamlined resume as promised, I will go through my last few
-      jobs from most to least current and as mentioned if you want my full
-      resume, you only need to ask.
+      jobs from present to past and my educational background.
       <br />
       <br />
       <p className="resume-title-exp">Education</p>
       <br />
       <p>
         <span className="resume-job-categories">School: </span>North Education
-        Center High School / Devry / Columbus State Community College / My
-        Computer Carrer Technical School
+        Center High School / Devry University / Columbus State Community College
+        / My Computer Carrer Technical School
       </p>
       <br />
       <p>
@@ -231,7 +232,7 @@ export const HomepageMain = {
               - Along with my main detail, I handle inbound and outbound calls.
               These calls are split between customers and various ISP's, I give
               and get updates about each ticket and take the appropriate actions
-              based on the information.
+              based on the information I receive.
             </li>
             <br />
             <li>
@@ -250,7 +251,7 @@ export const HomepageMain = {
             </li>
             <br />
             <li>
-              - Finally, this is a primarily customer facing position, so
+              - Finally, this is primarily a customer facing position, so
               customer service is at the forefront of what I do. I'm able to
               parse technical jargon from our engineers into everyday verbage
               for the end users that I speak to.
@@ -307,7 +308,7 @@ export const HomepageMain = {
           <li>
             - We worked in a ticketing system called ConnectWise and we were
             allowed to use a screen sharing app in order to commandeer an end
-            users PC so as to solve the issues ourselves.
+            users PC so as to solve issues ourselves.
           </li>
           <br />
           <li>
@@ -378,17 +379,19 @@ export const HomepageMain = {
           </li>
           <br />
           <li>
-            - This was also the highest pressure type of job I've had due to
-            dealing with the general public. I've been in some literal life or
-            death scenarios while working here.
+            - This was also a very high pressure type of job. If you've ever
+            dealt with the general public or been inside of a stangers home you
+            know what I'm talking about. I've been in some literal life or death
+            scenarios while working here.
           </li>
           <br />
           <li>
             - Additionally, this was a very physically demanding job as well. A
             normal day was 10 to 12 hrs of consistant physical labor. We served
             the greater columbus area east, but if need be, they rolled us
-            anywhere they could. Rain, snow, ice, wind; heck, even lightning and
-            tornados, we were out there in all of it, I'm not joking.
+            anywhere they could. Rain, snow, ice, wind; heck, even lightning,
+            weaker tornados and hurricanes, we were out there in all of it, I'm
+            not joking.
           </li>
           <br />
           <li>
@@ -460,10 +463,11 @@ export const HomepageMain = {
           </li>
           <br />
           <li>
-            - There was a fair bit of physical labor involved as each server was
-            a case with many metal "boxes" that housed the hardware components,
-            each box weighted about 50lbs and as you can imagine, it was
-            extremly hot in the server room.
+            - There was a fair bit of physical labor and mental taxing involved
+            as well. Each server was a case with many metal cases that housed
+            the hardware components, each case weighted about 50lbs and were
+            sometimes awkward to lift. Also, as you can imagine, it was extremly
+            hot and very noisy in the server rooms.
           </li>
           <br />
           <li>
