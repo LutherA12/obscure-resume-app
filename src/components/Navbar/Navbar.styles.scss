@@ -1,7 +1,6 @@
 .nav-bar-container {
-  position: fixed;
-  left: 28%;
-  top: 1px;
+  display: flex;
+  justify-content: center;
 
   .navlinks {
     cursor: pointer;

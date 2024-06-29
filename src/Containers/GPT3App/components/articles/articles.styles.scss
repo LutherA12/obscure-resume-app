@@ -1,4 +1,62 @@
 body {
   background-color: var(--background-color);
   color: aliceblue;
+
+  h3 {
+    padding-bottom: 50px;
+    text-decoration: underline;
+    letter-spacing: 2px;
+  }
+}
+
+.articles-gpt3 {
+  padding: 180px;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  max-width: 55vw;
+  border-radius: 520px;
+  letter-spacing: 1px;
+}
+
+.articles-danger {
+  padding: 120px;
+  text-align: center;
+  margin: 50px auto 0 auto;
+  max-width: 53vw;
+  border-radius: 470px;
+  letter-spacing: 1px;
+}
+
+.articles-data {
+  padding: 100px;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+}
+
+.articles-breaking {
+  padding: 90px;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+}
+
+.articles-point {
+  padding: 100px;
+  text-align: center;
+  margin: 100px auto 0 auto;
+  max-width: 40vw;
+  border-radius: 400px;
+  letter-spacing: 1px;
+}
+
+.articles-home-link {
+  &:hover {
+    text-decoration: underline;
+    color: var(--accentColor);
+  }
 }

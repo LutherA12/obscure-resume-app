@@ -1,6 +1,6 @@
 import "./article.styles.scss";
 
-function Article({ blogpic, date, title, link }) {
+export default function Article({ blogpic, date, title, link }) {
   return (
     <div className="gpt3__blog-container_article">
       <div className="gpt3__blog-container_article-image">
@@ -16,15 +16,3 @@ function Article({ blogpic, date, title, link }) {
     </div>
   );
 }
-
-export default Article;
-
-/*
-
-<p></p>
-
-          {ArticleLinks.links.map((links) => {
-            return <div>{links}</div>;
-          })}
-
-*/

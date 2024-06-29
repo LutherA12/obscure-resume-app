@@ -18,7 +18,7 @@
   text-align: center;
 }
 
-.body-container {
+.intro-text-container {
   margin: auto;
   padding: 10px 0;
   transition: all var(--animateTime) ease;
@@ -79,18 +79,25 @@
 }
 
 .app-discuss-buttons-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  row-gap: 70px;
-  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+  overflow: auto;
 
-  button {
+  .buttons {
     transition: all var(--animateTime) ease;
-    padding: 30px;
+    padding: 40px 120px;
+    margin-top: 50px;
     border-radius: 40px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    max-height: 120px;
+  }
+
+  .divs {
+    margin-top: 30px;
   }
 }
 
@@ -99,7 +106,7 @@
   color: var(--text-color);
   &:hover {
     padding: 33px;
-    color: var(--accentColor1);
+    color: var(--text-color);
     background-color: var(--gpt3-color);
   }
 }
@@ -111,12 +118,13 @@
   }
 }
 
-.monster-button {
+.monster-rolodex-button {
   box-shadow: 0px 6px 7px 0px var(--accentColor);
   color: var(--text-color);
+
   &:hover {
     padding: 33px;
-    color: var(--accentColor1);
+    color: var(--text-color);
     background-color: var(--monster-color);
   }
 }
@@ -133,13 +141,30 @@
   color: var(--text-color);
   &:hover {
     padding: 33px;
-    color: var(--accentColor1);
+    color: var(--text-color);
     background-color: var(--crown-color);
   }
 }
 
 .crown-object-link {
   color: var(--crown-color);
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.fourth-button {
+  box-shadow: 0px 6px 7px 0px var(--accentColor);
+  color: var(--text-color);
+  &:hover {
+    padding: 33px;
+    background-color: var(--fourth-color);
+    color: var(--text-color);
+  }
+} //not done
+
+.fourth-object-link {
+  color: var(--fourth-color);
   &:hover {
     text-decoration: underline;
   }
@@ -152,6 +177,7 @@
     padding: 33px;
     color: var(--accentColor1);
     background-color: var(--resume-color);
+    color: var(--text-color);
   }
 }
 
@@ -169,7 +195,7 @@
 }
 
 .resume-divider {
-  width: 790px;
+  width: 100%;
   height: 1px;
   background-color: var(--accentColor);
   margin: 80px 0;
@@ -177,18 +203,4 @@
 
 .resume-job-categories {
   color: var(--accentColor);
-}
-
-.map-buttons-divs {
-  display: flex;
-  overflow: auto;
-
-  .divs {
-    max-height: 450px;
-    max-width: 900px;
-  }
-
-  .buttons {
-    max-height: 80px;
-  }
 }

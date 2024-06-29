@@ -1,19 +1,19 @@
+import { Link } from "react-router-dom";
 import "./cta.styles.scss";
-import { CtaInfo } from "../../simpleConstants/simpleConstants";
 
-function Cta() {
+export default function Cta() {
   return (
     <div className="gpt3__cta">
       <div className="gpt3__cta-content">
-        <p>{CtaInfo.title}</p>
-        <h3>{CtaInfo.subtext}</h3>
+        <p>Request Early Access to Get Started</p>
+        <h3>Register today & start exploring the endless possibilities!</h3>
       </div>
 
       <div className="gpt3__cta-btn">
-        <button type="button">{CtaInfo.buttonText}</button>
+        <Link to="/SignUpForm">
+          <button type="button">Get Started!</button>
+        </Link>
       </div>
     </div>
   );
 }
-
-export default Cta;

@@ -1,78 +1,75 @@
-import { React, useState } from "react";
 import { Link } from "react-router-dom";
-import me from "../../Assets/me.png";
-import "./Homepage.styles.scss";
 
-export default function Homepage() {
-  const animateDelay = 1500;
+export const animateDelay = 1500;
 
-  const HomepageIntro = {
-    heading: "Hello",
-    intro: "My name is Luther",
-    introtext: (
-      <>
-        I'm a self taught developer that has been coding in React for about two
-        years. I also have experience in Firebase (a database service), fetching
-        API's, using Context, as well as some experience with Python. When I
-        first began my developer journey I jumped around from language to
-        language trying to learn everything, however, I got some really good
-        advice from a senior developer. He told me
-        <span className="accents">
-          "focus on one thing, you can learn the rest over time"
-        </span>
-        , so React has become my main focus. I am writing this project using
-        Vite and here is a link to my{" "}
-        <a href="https://github.com/LutherA12" className="github-link">
-          Github
-        </a>{" "}
-        account.
-      </>
-    ),
-    introtext1: (
-      <>
-        If you've been through my code then you can already tell I'm a fan of
-        lists! I did the same thing in Python as in React i.e. I hate when{" "}
-        <span className="accents">
-          my return statements and/or main coding base is
-        </span>{" "}
-        bogged down with strings, objects, variables, functions, etc., obviously
-        some of it is necessary and I'm not familiar with the state of
-        production code, but I try to streamline things where ever possible to
-        ensure the code I write is{" "}
-        <span className="accents">scalable, reuseable and DRY.</span>{" "}
-        Ironically, this intro alone has already cost me three functions.{" "}
-        <span className="accents">Go figure.</span>
-      </>
-    ),
-    introtext2: (
-      <>
-        Finally, I believe my strongest skills are my soft skills:{" "}
-        <span className="accents">I'm a forever student</span> and always
-        willing to learn what needs to be done in order to acheve success for
-        any company I work with as well as for myself.{" "}
-        <span className="accents">
-          Customer service is a large part of my skill set
-        </span>{" "}
-        so I know how to parse technical jorgon into everyday language without
-        being condesending. I'm also primarily a kinesthetic learner so I enjoy
-        researching, "getting my hands dirty", and learning by doing. As a
-        matter of fact, while writing this intro I had to research state to get
-        this click effect running properly!
-      </>
-    ),
-    invite: [
-      "Would you like to know more?",
-      "Would you like to know more?",
-      "Thank you for doing your part!",
-    ],
-  };
+export const HomepageIntro = {
+  heading: "Hello",
+  intro: "My name is Luther",
+  body: (
+    <>
+      I'm a self taught developer and I've been coding in React for about one
+      and a half years. I also have experience in Firebase (a database service),
+      fetching API's, using Context, as well as some experience with Python.
+      When I first began my developer journey I jumped around from language to
+      language trying to learn everything, however, I got some really good
+      advice from a senior developer. He told me{" "}
+      <span className="accents">
+        "focus on one thing, you can learn the rest over time"
+      </span>
+      , so React has become my main focus. I am writing this project using Vite
+      and here is a link to my{" "}
+      <a href="https://github.com/LutherA12" className="github-link">
+        Github
+      </a>{" "}
+      account as well.
+    </>
+  ),
+  body1: (
+    <>
+      If you've been through my code then you can already tell I'm a fan of
+      lists! I did the same thing in Python as in React i.e. I hate when{" "}
+      <span className="accents">
+        my return statement and/or main coding base is
+      </span>{" "}
+      bogged down with strings, objects, variables, functions, etc., obviously
+      some of it is necessary and I'm not familiar with the state of production
+      code, but I try to streamline things where ever possible to ensure the
+      code I write is{" "}
+      <span className="accents">scalable, reuseable and DRY.</span> Ironically,
+      this intro alone has already cost me three functions.{" "}
+      <span className="accents">Go figure.</span>
+    </>
+  ),
+  body2: (
+    <>
+      Finally, I believe my strongest skills are my soft skills:{" "}
+      <span className="accents">I'm a forever student</span> and always willing
+      to learn what needs to be done in order to acheve success for any company
+      I work with as well as for myself.{" "}
+      <span className="accents">
+        Customer service was/is a large part of my skill set
+      </span>{" "}
+      over my previous jobs so I know how to parse technical jorgon into
+      everyday language without being condesending. I'm also primarily a
+      kinesthetic learner so I enjoy researching, "getting my hands dirty", and
+      learning by doing. As a matter of fact, while writing this intro I had to
+      research state to get this click effect running properly!
+    </>
+  ),
+  invite: [
+    "Would you like to know more?",
+    "Would you like to know more?",
+    "Thank you for doing your part!",
+  ],
+};
 
-  const HomepageMainIntro = (
+export const HomepageMain = {
+  intro: (
     <>
       In this second portion I want to take the opportunity to briefly discuss
-      my apps at the top of this page with each of the buttons below. One thing
-      to note is that I make use of helper files such as component and container
-      export files. I do this so that I can bottleneck those files and use one
+      my apps at the top of this page. One thing to note is that I make use of a
+      lot of helper files such as component/container export files and simple
+      constant files. I do this so that I can bottleneck those files and use one
       import statement to bring them where they are necessary. It's more work on
       the frontend, but it saves me hassle on the backend when folder structure
       gets more complex since the helper files always have the same name and
@@ -82,51 +79,47 @@ export default function Homepage() {
       page. Why not just put my full resume here? Well, I'll be candid. I've
       wanted to become a software developer for quite some time, however, my
       actions didn't always match my desires and some of those actions have led
-      me to a lot of jobs that were not pertinent to development. I don't want
-      to give needless information unless asked directly, I know you are busy
-      people. Instead, similar to how I try and code, I strive for efficiency
-      and practicality wherever possible and the more I know, the better I am.
+      me to a lot of jobs that are not pertinent to development. These were
+      "waste of time" jobs if you like and I don't want to give needless
+      information unless asked directly, I know you are busy people. Instead,
+      similar to how I try and code, I strive for efficiency, practicality and
+      effectiveness wherever possible and the more I know, the better I am.
     </>
-  );
+  ),
 
-  const Gpt3Text = (
+  discussDivsAfterClick: [
     <div className="gpt3-div">
-      This was the first full application that I wrote from start to finish. I'm
-      a bit ashamed to say it took me two attempts over the span of a few months
-      to complete. The reason why? I wanted to understand what I was writing and
-      why it worked, not just mindlessly copy a tutorial.
+      This was the first full application that I sat through and wrote from
+      start to finish. I'm a bit ashamed to say it took me two attempts over the
+      span of a few months to complete. The reason why? I wanted to understand
+      what I was writing and why it worked, not just mindlessly copy a tutorial.
       <br />
       <br /> When I started this project I was very new to React so I didn't
-      understand much about the BEM naming convention, state, the map method, or
-      much of anything else for that matter, but I found working through this
-      app really helped cement some of those concepts for me once I had more
-      knowledge under my belt. <br />
-      <br /> This is a full landing page for GPT3 (a chat gpt look alike). I've
-      added functionallity to the initial design since it was a non functional
-      landing page. Now, the buttons take you to a sign in page, the articles
-      are clickable links, and the navbar moves you to different portions of the
-      page. I did a bit of research on chat gpt and wrote the articles as
-      coherently as I could if you're in the mood for some reading but please
-      take them with a grain of salt. <br />
+      really understand much about the BEM naming convention, state, the map
+      method, or much of anything else for that matter, but I found working
+      through this app really helped cement some of those concepts for me once I
+      had more knowledge under my belt. <br />
+      <br /> This is a full landing page for GPT3 (chat gpt) which I've added
+      functionallity to since the basic design was simply just the landing page.
+      Now, the sign in/sign out buttons work via Firebase and the articles are
+      clickable links. I did a bit of research on chat gpt and wrote the
+      articles as coherently as I could if you're in the mood for some more
+      reading but please take them with a grain of salt. <br />
       <br />I also tried to make this app as DRY as I could and the coding you
-      see now is quite different from how it was originally. I moved everything
-      within reason into various objects and constants so as to keep my return
-      statements as clean and concise as possible. I wrote all of the CSS with
-      SASS (which I enjoy much more than tailwind and bootstrap). This page is
-      also fully responsive down to cell phone screens. <br />
+      see now is a bit different from how it was originally. Namely, I moved
+      everything within reason into objects and put those in a separate helper
+      file so that I could import them where they are needed. This page is also
+      fully responsive down to cell phone screens. <br />
       <br />
       <span>
         {" "}
-        Here is another link to the{" "}
+        Here is another link{" "}
         <Link to="/GPT3App" className="gpt3-object-link">
           GPT3
         </Link>{" "}
-        app.
+        to this app.
       </span>
-    </div>
-  );
-
-  const MonsterRolodexText = (
+    </div>,
     <div className="monster-div">
       I wrote this app a bit later into my React journey. I usually prefer
       functional components but I wanted to try my hand at class components. For
@@ -142,19 +135,16 @@ export default function Homepage() {
       <br />
       <span>
         {" "}
-        Here is another link to the{" "}
+        Here is another link{" "}
         <Link to="/MonsterApp" className="monster-object-link">
           Monster Rolodex
         </Link>{" "}
-        app.
+        to this app.
       </span>
-    </div>
-  );
-
-  const CrownClothingText = (
+    </div>,
     <div className="crown-div">
       This is my largest project by far and for it I'm attending and learning
-      from ZTM. <br />
+      from ZTM which is similar to Udemy. <br />
       <br />
       Crown is a fully realized clothing web app with the database service
       Firebase attached. The features includes sign in/sign out via Google popup
@@ -169,28 +159,22 @@ export default function Homepage() {
       <br />{" "}
       <span>
         {" "}
-        Here is another link to the{" "}
+        Here is another link{" "}
         <Link to="/CrownApp" className="crown-object-link">
           Crown Clothing
         </Link>{" "}
-        app.
+        to this app.
       </span>
-    </div>
-  ); //not done
-
-  const FourthDivText = (
+    </div>,
     <div className="fourth-div">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad,
       quos incidunt voluptatibus blanditiis ipsam voluptates exercitationem,
       rerum in omnis aut quis laborum perferendis asperiores suscipit ex, nulla
       libero neque.
-    </div>
-  ); //not done
-
-  const ResumeText = (
+    </div>, //not complete
     <div className="resume-div">
       Here is my streamlined resume as promised, I will go through my last few
-      jobs from current to recent and my educational background.
+      jobs from present to past and my educational background.
       <br />
       <br />
       <p className="resume-title-exp">Education</p>
@@ -204,6 +188,9 @@ export default function Homepage() {
         <span className="resume-job-categories">Year: </span> 2007 / 2008 / 2020
       </p>
       <br />
+      <p>
+        <span className="resume-job-categories">Graduate: </span> No / No / Yes
+      </p>
       <br />
       <p className="resume-title-exp">Professional Experience</p>
       <br />
@@ -213,12 +200,15 @@ export default function Homepage() {
           Support Anaylist
         </li>
         <li>
-          <span className="resume-job-categories">Company: </span>ENA (Education
-          Networks of America)
+          <span className="resume-job-categories">Company: </span>ENA "Education
+          Networks of America"
         </li>
         <li>
           <span className="resume-job-categories">Role: </span>Tech
           Support/Customer Service/Error Monitoring
+        </li>
+        <li>
+          <span className="resume-job-categories">Current Job: </span>Yes
         </li>
         <li>
           <span className="resume-job-categories">Duration: </span>Sept 2022 -
@@ -239,9 +229,9 @@ export default function Homepage() {
             <br />
             <li>
               - Along with my main detail, I handle inbound and outbound calls.
-              These calls are split between customers and various ISP's, I get
-              and give updates about each ticket and take the appropriate
-              actions based on the information I receive.
+              These calls are split between customers and various ISP's, I give
+              and get updates about each ticket and take the appropriate actions
+              based on the information I receive.
             </li>
             <br />
             <li>
@@ -279,8 +269,8 @@ export default function Homepage() {
       <div className="resume-divider"></div>
       <ul className="NetOps">
         <li>
-          <span className="resume-job-categories">Job Title: </span>
-          Application Support Technician
+          <span className="resume-job-categories">Job Title: </span>Application
+          Support Technician
         </li>
         <li>
           <span className="resume-job-categories">Company: </span>NetOps
@@ -289,6 +279,9 @@ export default function Homepage() {
         <li>
           <span className="resume-job-categories">Role: </span>Desktop and
           Application Support
+        </li>
+        <li>
+          <span className="resume-job-categories">Current Job: </span>No
         </li>
         <li>
           <span className="resume-job-categories">Duration: </span>March 2022 -
@@ -306,7 +299,7 @@ export default function Homepage() {
             to know any and all of the end user applications regardless of
             whether they were desktop or web apps, popular or nuance, open
             source or proprietary. We had to know both windows and MAC OS along
-            with all of their features and functions.
+            with all of their features.
           </li>
           <br />
           <li>
@@ -354,6 +347,9 @@ export default function Homepage() {
         <li>
           <span className="resume-job-categories">Role: </span>Installing Cable,
           Internet and Phone for residential and small business
+        </li>
+        <li>
+          <span className="resume-job-categories">Current Job: </span>No
         </li>
         <li>
           <span className="resume-job-categories">Duration: </span>Sept 2021 -
@@ -422,8 +418,11 @@ export default function Homepage() {
           <span className="resume-job-categories">Company: </span>Amazon/CER INC
         </li>
         <li>
-          <span className="resume-job-categories">Role: </span>
-          Hardware/Software Technician
+          <span className="resume-job-categories">Role: </span>Hardware/Software
+          Technician
+        </li>
+        <li>
+          <span className="resume-job-categories">Current Job: </span>No
         </li>
         <li>
           <span className="resume-job-categories">Duration: </span>May 2021-Sept
@@ -464,10 +463,10 @@ export default function Homepage() {
           <br />
           <li>
             - There was a fair bit of physical and mental labor involved as
-            well. Each server case was a dresser type structure with many metal
-            cases inside of it. Each metal case (which housed the hardware
-            components) was a long rectangle that weighted about 50lbs. Also, it
-            was extremly hot and very noisy in the server rooms.
+            well. Each server was a case with many metal cases that housed the
+            hardware components. Each metal case was a long rectangle and
+            weighted about 50lbs. Also, it was extremly hot and very noisy in
+            the server rooms.
           </li>
           <br />
           <li>
@@ -478,7 +477,7 @@ export default function Homepage() {
           <br />
           <p>
             Contact Info: 586-884-6955 / My supervisor: Michael / Address: 6100
-            Auburn Road, Shelby Township, MI 48317 / Link to Website:
+            Auburn Road, Shelby Township, MI 48317 / Link to Website:{" "}
             <Link to="http://cergroupna.com/" className="resume-links">
               CER INC
             </Link>
@@ -498,6 +497,9 @@ export default function Homepage() {
         <li>
           <span className="resume-job-categories">Role: </span>Home Security
           Technician
+        </li>
+        <li>
+          <span className="resume-job-categories">Current Job: </span>No
         </li>
         <li>
           <span className="resume-job-categories">Duration: </span>June 2020 -
@@ -532,8 +534,7 @@ export default function Homepage() {
           <li>
             - On a personal note, I was hand selected to be the first temporary
             worker in four years due to my manager at the time Zane looking
-            favorably upon my resume and selecting me himself. Insight Global
-            was the temp agency that I worked for at the time.
+            favorably on my resume and selecting me himself.
           </li>
           <br />
           <p>
@@ -549,200 +550,10 @@ export default function Homepage() {
           </p>
         </ul>
       </ul>
-    </div>
-  );
-
-  const HomepageFooter = (
-    <>
-      Here is my full resume as promised complete with all of my work history.
-    </>
-  );
-
-  const [isAnimating, setIsAnimating] = useState(false);
-
-  const [introText, setIntroText] = useState(HomepageIntro.introtext);
-
-  const [inviteText, setInviteText] = useState(HomepageIntro.invite[0]);
-  const [inviteText1, setInviteText1] = useState("");
-  const [inviteText2, setInviteText2] = useState("");
-
-  const InviteTextHandler = async () => {
-    setIsAnimating(true);
-
-    setTimeout(() => {
-      setIsAnimating(false);
-      setIntroText(HomepageIntro.introtext1);
-      setInviteText("");
-      setInviteText1(HomepageIntro.invite[1]);
-    }, animateDelay);
-  };
-
-  const InviteTextHandler1 = async () => {
-    setIsAnimating(true);
-
-    setTimeout(() => {
-      setIsAnimating(false);
-      setIntroText(HomepageIntro.introtext2);
-      setInviteText1("");
-      setInviteText2(HomepageIntro.invite[2]);
-    }, animateDelay);
-  };
-
-  const InviteTextHandler2 = async () => {
-    setIsAnimating(true);
-
-    setTimeout(() => {
-      setIsAnimating(false);
-      setIntroText(HomepageIntro.introtext);
-      setInviteText2("");
-      setInviteText(HomepageIntro.invite[0]);
-    }, animateDelay);
-  };
-
-  const Invite = [
-    <span className="invite" onClick={InviteTextHandler}>
-      {inviteText}
-    </span>,
-    <span className="invite" onClick={InviteTextHandler1}>
-      {inviteText1}
-    </span>,
-    <span className="invite" onClick={InviteTextHandler2}>
-      {inviteText2}
-    </span>,
-  ];
-
-  const [isGpt3ButtonClicked, setIsGpt3ButtonClicked] = useState(false);
-  const [isMonsterButtonClicked, setIsMonsterButtonClicked] = useState(false);
-  const [isCrownClothingButtonClicked, setIsCrownClothingButtonClicked] =
-    useState(false); //not done
-  const [isFourthButtonClicked, setIsFourthButtonClicked] = useState(false); //not done
-  const [isResumeButtonClicked, setIsResumeButtonClicked] = useState(false);
-
-  const Gpt3ButtonClickHandler = () => {
-    setIsGpt3ButtonClicked(!isGpt3ButtonClicked);
-  };
-
-  const MonsterButtonClickedHandler = () => {
-    setIsMonsterButtonClicked(!isMonsterButtonClicked);
-  };
-
-  const CrownClothingButtonClickedHandler = () => {
-    setIsCrownClothingButtonClicked(!isCrownClothingButtonClicked);
-  };
-
-  const FourthButtonClickedHandler = () => {
-    setIsFourthButtonClicked(!isFourthButtonClicked);
-  };
-
-  const ResumeButtonClickedHandler = () => {
-    setIsResumeButtonClicked(!isResumeButtonClicked);
-  };
-
-  const Buttons = [
-    <button
-      type="button"
-      className="buttons gpt3-button"
-      onClick={Gpt3ButtonClickHandler}
-    >
-      GPT3
-    </button>,
-    <div>{isGpt3ButtonClicked && <div className="divs">{Gpt3Text}</div>}</div>,
-
-    <button
-      type="button"
-      className="buttons monster-rolodex-button"
-      onClick={MonsterButtonClickedHandler}
-    >
-      Monster Rolodex
-    </button>,
-    <div>
-      {isMonsterButtonClicked && (
-        <div className="divs">{MonsterRolodexText}</div>
-      )}
     </div>,
-    <button
-      type="button"
-      className="buttons crown-clothing-button"
-      onClick={CrownClothingButtonClickedHandler}
-    >
-      Crown Clothing
-    </button>,
-    <div>
-      {isCrownClothingButtonClicked && (
-        <div className="divs">{CrownClothingText}</div>
-      )}
-    </div>,
-    <button
-      type="button"
-      className="buttons fourth-button"
-      onClick={FourthButtonClickedHandler}
-    >
-      Fourth
-    </button>,
-    <div>
-      {isFourthButtonClicked && <div className="divs">{FourthDivText}</div>}
-    </div>,
-    <button
-      type="button"
-      className="buttons resume-button"
-      onClick={ResumeButtonClickedHandler}
-    >
-      Resume
-    </button>,
-    <div>
-      {isResumeButtonClicked && <div className="divs">{ResumeText}</div>}
-    </div>,
-  ];
+  ],
+};
 
-  return (
-    <>
-      <div className="home-page-container">
-        <section className="intro-container">
-          <div className="image-container">
-            <h3 className="heading">{HomepageIntro.heading}</h3>
-            <img src={me} alt="img not found" />
-
-            <div className="intro">
-              <h3>{HomepageIntro.intro}</h3>
-            </div>
-          </div>
-
-          <div
-            className={`intro-text-container ${isAnimating ? "animate" : ""}`}
-          >
-            {introText}
-          </div>
-
-          <div className="invite-container">
-            {Invite.map((invite, index) => {
-              return <span key={index}>{invite}</span>;
-            })}
-          </div>
-        </section>
-
-        <div className="divider"></div>
-
-        <section className="main-container">
-          <div className="main-intro-container">{HomepageMainIntro}</div>
-          <div className="app-discuss-container">
-            <div className="app-discuss-buttons-container">
-              {Buttons.map((buttons, index) => {
-                return (
-                  <div className="buttons-divs-container" key={index}>
-                    {buttons}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        <div className="divider"></div>
-
-        <section className="footer-container">
-          <div>{HomepageFooter}</div>
-        </section>
-      </div>
-    </>
-  );
-}
+export const HomepageFooter = {
+  footer: <>Footer of the page</>,
+};

@@ -1,18 +1,16 @@
 import "./App.styles.scss";
 import { Navbar } from "./components/componentExports.jsx";
-import { React, Fragment } from "react";
+import { React } from "react";
 
-function App() {
+export default function App() {
   return (
-    <Fragment>
+    <>
       <div className="main-app">
         <Navbar />
       </div>
-    </Fragment>
+    </>
   );
 }
-
-export default App;
 
 /*
 

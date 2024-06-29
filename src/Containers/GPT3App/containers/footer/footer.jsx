@@ -1,51 +1,53 @@
 import "./footer.styles.scss";
-import { FooterInfo } from "../../simpleConstants/simpleConstants.jsx";
+import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
-function Footer() {
+export default function Footer() {
   return (
     <div className="gpt3__footer section__padding">
       <div className="gpt3__footer-heading">
-        <h1 className="gradient__text">{FooterInfo.heading}</h1>
+        <h1 className="gradient__text">
+          Do you want to step into the future before others?
+        </h1>
       </div>
 
       <div className="gpt3__footer-btn">
-        <p>{FooterInfo.subtext}</p>
+        <Link to="/SignUpForm">
+          <button type="button">Request Early Access</button>
+        </Link>
       </div>
 
       <div className="gpt3__footer-links">
         <div className="gpt3__footer-links_logo">
-          <img src={FooterInfo.gpt3Logo} alt="image not found" />
-          <p>{FooterInfo.address}</p>
+          <img src={logo} alt="image not found" />
+          <p>Obscure GPT3 141 Main St, Citytown, USA, All Rights Reserved</p>
         </div>
 
         <div className="gpt3__footer-links_div">
-          <h4>{FooterInfo.footlinks[0]}</h4>
-          <p>{FooterInfo.footlinks[1]}</p>
-          <p>{FooterInfo.footlinks[2]}</p>
-          <p>{FooterInfo.footlinks[3]}</p>
-          <p>{FooterInfo.footlinks[4]}</p>
+          <h4>Links</h4>
+          <p>Overrons</p>
+          <p>Social Media</p>
+          <p>Counters</p>
         </div>
 
         <div className="gpt3__footer-links_div">
-          <h4>{FooterInfo.companylinks[0]}</h4>
-          <p>{FooterInfo.companylinks[1]}</p>
-          <p>{FooterInfo.companylinks[2]}</p>
-          <p>{FooterInfo.companylinks[3]}</p>
+          <h4>Company</h4>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+          <p>About Us</p>
         </div>
 
-        <div className="gpt3__footer-links_div">
-          <h4>{FooterInfo.contactlinks[0]}</h4>
-          <p>{FooterInfo.contactlinks[1]}</p>
-          <p>{FooterInfo.contactlinks[2]}</p>
-          <p>{FooterInfo.contactlinks[3]}</p>
+        <div className="gpt3__footer-get_in_touch">
+          <h4>Get In Touch</h4>
+          <p>141 Main St, Citytown, USA</p>
+          <p>1-800-123-1234</p>
+          <p>gpt3@info.net</p>
         </div>
       </div>
 
       <div className="gpt3__footer-copyright">
-        <p>{FooterInfo.copyright}</p>
+        <p>&copy; 2021 GPT-3 All Rights Reserved</p>
       </div>
     </div>
   );
 }
-
-export default Footer;

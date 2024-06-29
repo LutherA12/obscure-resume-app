@@ -1,10 +1,10 @@
 import "./feature.styles.scss";
 
-function Feature({ title, text }) {
+export default function Feature({ title, text }) {
   return (
     <div className="gpt3__features-container__feature">
       <div className="gpt3__features-container__feature-title">
-        <div></div>
+        <div className="feature-accent-div"></div>
         <h1>{title}</h1>
       </div>
 
@@ -14,5 +14,3 @@ function Feature({ title, text }) {
     </div>
   );
 }
-
-export default Feature;
