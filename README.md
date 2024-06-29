@@ -6,5 +6,5 @@ Update 10/11/23: Just a small update, I've finished streamlining my resume onto 
 
 Update 10/18/23: Another smaller update, I've reworked and added some of the routes in my main application so that my GPT3 app has more functionallity now. In the coming weeks I will add Firebase to that app;
 
-Update 06/28/2024 I've been working on this and other project so this update is a larger one; 
+Update 06/28/2024: I've been working on this and other project so this update is a larger one; 
 I've reworked this project so that it's more streamline, some of the SASS has been reworked and files/folders have been moved around for better understanding and accuracy; I've also moved most of the constants into their own files to create a better separation of concerns. I will be adding 2 new projects to my resume in the coming months;
